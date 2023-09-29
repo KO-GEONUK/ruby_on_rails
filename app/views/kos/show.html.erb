@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kos App</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<p class="alert alert-success"><%= notice %></p>
+
+<div class="card">
+  <div class="card-body">
+    <%= render @ko %>
+  </div>
+</div>
+
+<div class="mt-3">
+  <%= link_to "Edit this ko", edit_ko_path(@ko), class: "btn btn-primary" %> |
+  <%= link_to "Back to kos", kos_path, class: "btn btn-secondary" %>
+
+  <%= button_to "Destroy this ko", @ko, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

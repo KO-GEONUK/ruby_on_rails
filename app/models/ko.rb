@@ -1,0 +1,2 @@
+class Ko < ApplicationRecord
+end
